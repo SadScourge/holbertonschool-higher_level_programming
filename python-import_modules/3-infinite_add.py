@@ -5,10 +5,9 @@ index = 1
 result = 0
 
 if len(sys.argv) == 1:
-	pass
+    pass
 else:
-	while index < len(sys.argv):
-		result += int(sys.argv[index])
-		index += 1
-	print (f"{result}")
-	
+    while index < len(sys.argv):
+        result += int(sys.argv[index])
+        index += 1
+    print(f"{result}")
