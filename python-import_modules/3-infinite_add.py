@@ -10,4 +10,4 @@ else:
     while index < len(sys.argv):
         result += int(sys.argv[index])
         index += 1
-    print(f"{result}")
+    print("{}".format(result))
