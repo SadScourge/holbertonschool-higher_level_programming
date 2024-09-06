@@ -1,0 +1,1 @@
+This directory contain if, else and loop exercises in Python.

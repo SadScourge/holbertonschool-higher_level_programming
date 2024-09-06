@@ -1,0 +1,1 @@
+This directory contain module import exercises in Python.

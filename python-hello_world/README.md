@@ -1,0 +1,1 @@
+This directory contain basic hello world exercises in Python.
