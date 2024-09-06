@@ -5,4 +5,4 @@ for first_digit in range(0, 10):
         str += f"{first_digit}{second_digit}"
         if not (first_digit == 8 and second_digit == 9):
             str += f", "
-print(str)
+print("{}".format(str))
