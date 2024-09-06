@@ -1,3 +1,5 @@
 #!/usr/bin/python3
+result = ""
 for index in range(0, 99):
-    print(f"{index} = {hex(index)}")
+    result += f"{index} = {hex(index)}\n"
+print(result)
