@@ -1,0 +1,1 @@
+This directory contain exceptions exercises in Python.

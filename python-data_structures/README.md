@@ -1,0 +1,1 @@
+This directory contain data structure exercises in Python.
