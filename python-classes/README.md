@@ -1,0 +1,1 @@
+This directory contain classes exercises in Python.
