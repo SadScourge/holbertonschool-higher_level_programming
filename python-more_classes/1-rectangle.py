@@ -1,6 +1,32 @@
 #!/usr/bin/python3
+"""
+This module defines a Rectangle class.
+"""
+
+
 class Rectangle:
+    """
+    A class to represent a rectangle.
+    """
+
     def __init__(self, width=0, height=0):
+        """
+        Initialize the rectangle with width and height.
+
+        Parameters:
+        -----------
+        width : int, optional
+            The width of the rectangle (default is 0).
+        height : int, optional
+            The height of the rectangle (default is 0).
+
+        Raises:
+        -------
+        TypeError:
+            If width or height is not an integer.
+        ValueError:
+            If width or height is negative.
+        """
         if type(width) is not int:
             raise TypeError("width must be an integer")
         if width < 0:
@@ -14,10 +40,33 @@ class Rectangle:
 
     @property
     def width(self):
+        """
+        Get the width of the rectangle.
+
+        Returns:
+        --------
+        int:
+            The width of the rectangle.
+        """
         return self.__width
 
     @width.setter
     def width(self, value):
+        """
+        Set the width of the rectangle.
+
+        Parameters:
+        -----------
+        value : int
+            The new width of the rectangle.
+
+        Raises:
+        -------
+        TypeError:
+            If the width is not an integer.
+        ValueError:
+            If the width is negative.
+        """
         if type(value) is not int:
             raise TypeError("width must be an integer")
         if value < 0:
@@ -26,10 +75,33 @@ class Rectangle:
 
     @property
     def height(self):
+        """
+        Get the height of the rectangle.
+
+        Returns:
+        --------
+        int:
+            The height of the rectangle.
+        """
         return self.__height
 
     @height.setter
     def height(self, value):
+        """
+        Set the height of the rectangle.
+
+        Parameters:
+        -----------
+        value : int
+            The new height of the rectangle.
+
+        Raises:
+        -------
+        TypeError:
+            If the height is not an integer.
+        ValueError:
+            If the height is negative.
+        """
         if type(value) is not int:
             raise TypeError("height must be an integer")
         if value < 0:
