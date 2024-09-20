@@ -132,12 +132,12 @@ class Square:
         If the size is 0, print an empty line.
         """
         if self.__size == 0:
-            print("")
+            print()
             return
 
         # Print vertical space (position[1] indicates the number of newlines)
         for indexIV in range(self.__position[1]):
-            print("")
+            print()
 
         # Print each row of the square
         for indexI in range(self.__size):
@@ -147,4 +147,4 @@ class Square:
             # Print the square row
             for indexIII in range(self.__size):
                 print("#", end="")
-            print("")
+            print()
