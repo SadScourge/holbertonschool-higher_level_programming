@@ -1,0 +1,1 @@
+This directory contain inheritance exercises in Python.
