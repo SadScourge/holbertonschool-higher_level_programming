@@ -3,19 +3,7 @@ from flask import Flask
 from flask import jsonify
 from flask import request
 
-dictionary = {
-    "jane": {
-        "username": "jane",
-        "name": "Jane",
-        "age": 28,
-        "city": "Los Angeles"
-        },
-    "john": {
-        "username": "john",
-        "name": "John",
-        "age": 30,
-        "city": "New York"
-        }}
+dictionary = {}
 
 app = Flask(__name__)
 
