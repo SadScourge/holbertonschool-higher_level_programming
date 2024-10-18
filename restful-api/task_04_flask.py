@@ -40,7 +40,7 @@ def userpage(user):
     if user in dictionary:
         return jsonify(dictionary[user])
     else:
-        return jsonify({"error": "User not found"})
+        return jsonify({"error": "User not found"}), 404
 
 
 @app.route("/add_user", methods=['POST'])
