@@ -48,7 +48,7 @@ def adduser():
     newuser = request.get_json()
     if "username" in newuser:
         dictionary[newuser["username"]] = newuser
-        return jsonify({"message": "User addded", "user": newuser}), 201
+        return jsonify({"message": "User added", "user": dictionary[newuser["username"]]}), 201
     else:
         return jsonify({"error": "Username is required"}), 400
 
