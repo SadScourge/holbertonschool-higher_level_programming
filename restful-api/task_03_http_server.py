@@ -13,6 +13,7 @@ class Holberton_API(http.server.BaseHTTPRequestHandler):
         if self.path == '/':
             self.send_response(200)
             self.send_header("Content-type", "application/json")
+            self.end_headers()
             self.wfile.write(b"Hello, this is a simple API!")
         elif self.path == '/data':
             self.send_response(200)
@@ -26,6 +27,8 @@ class Holberton_API(http.server.BaseHTTPRequestHandler):
             self.wfile.write(json.dumps(data).encode('utf-8'))
         elif self.path == '/status':
             self.send_response(200)
+            self.send_header("Content-type", "text/plain")
+            self.end_headers()
             self.wfile.write(b"OK")
         elif self.path == '/info':
             self.send_response(200)
