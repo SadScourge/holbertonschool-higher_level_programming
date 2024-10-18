@@ -49,14 +49,11 @@ def basicprotected():
 def login_page():
     username = request.json.get("username", None)
     password = request.json.get("password", None)
-    if username in users:
-        if check_password_hash(users[username]["password"], password):
-            access_token = create_access_token(identity=username)
-            return jsonify(access_token=access_token)
-        else:
-            return jsonify({"msg": "Bad password"}), 401
+    if username in users and check_password_hash(users[username]["password"], password):
+        access_token = create_access_token(identity=username)
+        return jsonify(access_token=access_token)
     else:
-        return jsonify({"msg": "Bad username"}), 401
+        return jsonify(), 401
 
 
 @app.route("/jwt-protected")
@@ -69,7 +66,7 @@ def jwt_protected():
 @jwt_required()
 def admin_only():
     user = get_jwt_identity()
-    if users[user]["role"] is "admin":
+    if users[user]["role"] == "admin":
         return "Admin Access: Granted"
     else:
         return jsonify({"error": "Admin access required"}), 403
