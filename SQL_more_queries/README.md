@@ -1,0 +1,1 @@
+This directory contain SQL_more_ueries exercises in Python.

@@ -1,0 +1,1 @@
+This directory contain SQL_introduction exercises in Python.
