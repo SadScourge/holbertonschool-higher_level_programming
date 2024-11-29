@@ -1,0 +1,1 @@
+This directory contain DOM manipulation exercises in JavaScript.
