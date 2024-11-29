@@ -1,5 +1,5 @@
-var header = document.querySelector("header")
-var headerToggle = document.getElementById("toggle_header");
+const header = document.querySelector("header")
+const headerToggle = document.getElementById("toggle_header");
 headerToggle.addEventListener("click", function() {
     if (header.className == "green") {
         header.className = "red";
@@ -8,4 +8,3 @@ headerToggle.addEventListener("click", function() {
         header.className = "green";
     }
 });
-
