@@ -1,0 +1,1 @@
+This directory contain server side rendering exercises in Python.
